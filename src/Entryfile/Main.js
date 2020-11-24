@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch,HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, HashRouter } from 'react-router-dom';
 import App from '../initialpage/App';
 import config from 'config';
+// import history from '../helpers/history'
 
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 // import 'font-awesome/css/font-awesome.min.css';
@@ -42,7 +43,8 @@ const MainApp = () => (
       <Switch>
          <Route path="/" component={App} />
       </Switch>
-	</Router>
+      {/* <App /> */}
+   </Router>
 );
 
 export default MainApp;
